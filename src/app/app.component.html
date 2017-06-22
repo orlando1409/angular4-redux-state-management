@@ -1,0 +1,6 @@
+<template-modal [modalState]="this.openedModalName$ | async" (onCloseModal)="handleCloseModal()"></template-modal>
+<button class="btn btn-outline-primary" (click)="handleOpenModal('templateFormModal')">Open modal with template</button>
+
+<!-- Don't forget to add this: -->
+<ng-template ngbModalContainer></ng-template>
+
